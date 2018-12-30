@@ -1,6 +1,6 @@
 {% set name = "yarn-api-client" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "269d03b0da72400032d27592700df7939c6980d576b3e79c8f4af6a4822a7247" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "4803ac54d04c1db190b34452bd68dd0ba45fb87410c0865c10e65d7ec0484581" %}
 
 package:
   name: {{ name|lower }}

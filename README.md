@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About yarn-api-client
 =====================
 
@@ -18,8 +14,15 @@ Summary: Python client for Hadoop® YARN API
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/yarn-api-client-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/yarn-api-client-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4439&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/yarn-api-client-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================

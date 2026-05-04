@@ -9,25 +9,27 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
 
   run:
-    - python
+    - python >={{ python_min }}
     - requests >=2.7,<3.0
     - requests-kerberos
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - yarn_api_client
 

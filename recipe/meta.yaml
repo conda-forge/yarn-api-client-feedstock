@@ -1,7 +1,7 @@
 {% set name = "yarn-api-client" %}
 
-{% set version = "1.0.2" %}
-{% set sha256 = "e04a3670fdae5c20d53fc10e125db8b000f4cb085844444eecd82b00f5e18c7a" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "e04455e5a59f05333b867aeec4ec53df7188cf6503073ef79912647a697205ae" %}
 
 package:
   name: {{ name|lower }}
@@ -13,9 +13,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
